@@ -54,7 +54,6 @@ let sort = remove.sort().join('')
 console.log(sort)
 
 // repeated letter 
-
 const rep = sting.split("")
 const repeat = [... new Set(rep.filter(item => rep.indexOf(item) !== rep.lastIndexOf(item)))]
 console.log('reapeat :', repeat)
@@ -90,7 +89,7 @@ console.log(digit % sum === 0 ? `harshed number is ${sum}` : "unharshed number")
 
 
 // 8. find missing number
-const arr6 = [1, 2, 3, 5];
+const arr6 = [1, 2, 3, 5,];
 const n = 5;
 const actul = (n * (n + 1) / 2)
 const expt = arr6.reduce((num, item) => num + item, 0)
@@ -118,3 +117,34 @@ const arr = [10, 20, 30, 40, 50];
 for(i = 0 ; i < arr.length; i++){
     console.log(arr[i])
 }
+
+// 11. count vowel leters 
+
+const srt = 'javascript';
+const vowel = 'aeiou'
+let cont = 0;
+
+for(let char of srt){
+    if (vowel.includes(char)) {
+        cont ++
+    }
+    console.log(cont)
+}
+
+// 12 capital the first letter
+const name = 'chandru'
+
+const cap1 = name.charAt(0).toUpperCase()+ name.slice(1)
+console.log(cap1)
+
+
+// 13. merge two arrays
+const ar1 = [1,2,3]
+const ar2 = [4,5,6]
+// method one spred operater
+const arr8_1 = [...ar1,...ar2]
+console.log(arr8_1)
+
+// method 2 concat
+const arr8_2 = ar1.concat(ar2)
+console.log(arr8_2)
