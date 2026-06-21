@@ -196,4 +196,36 @@ const users3 = [
 ]
 
 const sort_age = users3.sort((a,b) => a.age - b.age)
-console.log('sort by name',sort_age);
+console.log('sort by age',sort_age);
+
+// find most repeated word
+const frt = ["apple","banana","apple","apple"]
+
+const maxfrt =frt.filter(item => frt.indexOf(item) !== frt.lastIndexOf(item))
+console.log('max frt and count :',maxfrt[0],maxfrt.length);
+
+
+// group of user by age 
+const users4 = [
+ {name:"A",age:20},
+ {name:"B",age:20},
+ {name:"C",age:25}
+]
+
+let age20 = []
+let age25 = []
+
+users4.forEach(item => {
+    if(item.age === 20)
+        age20.push(item)
+
+    if (item.age === 25) {
+        age25.push(item)
+    }
+})
+
+console.log('age 20 :',age20, 'age 25 :', age25)
+// method 2
+const grouped = Object.groupBy(users4,user => user.age)
+
+console.log(grouped)
