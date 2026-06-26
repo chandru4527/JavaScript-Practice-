@@ -336,11 +336,21 @@ console.log("data type :", typeof c, c)
 let d = '5' - 3
 console.log("data type :", typeof d, d)
 
-let e = '5' + 3 
+let e = '5' + 3
 console.log("data type :", typeof e, e)
 
-let f = 0.1 + 0.2  !== 0.3
+let f = 0.1 + 0.2 === 0.3
 console.log("data type :", typeof f, f)
 
 let g = [] == []
 console.log("data type :", typeof g, g)
+
+let h = [, , ,].length
+console.log("data type :", typeof h, h)
+
+let i2 = ''
+let i3 = 0
+let i4 = i2 + i3
+console.log("data type :", typeof i4, i4)
+
+
