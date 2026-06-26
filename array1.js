@@ -313,5 +313,34 @@ console.log(lesszero)
 console.log(greatzero)
 console.log(newalign)
 
+// guess the output
+const x = [1, 2, 3]
+let y = x
+y += [4]
 
+console.log(typeof y, y)  // string output 1,2,34
 
+// geuss  the output 
+let z = true + false
+console.log("data type :", typeof z, z)
+
+let a = [''] + ['']
+console.log("data type :", typeof a, a)
+
+let b = [] + {}
+console.log("data type :", typeof b, b)
+
+let c = {} + []
+console.log("data type :", typeof c, c)
+
+let d = '5' - 3
+console.log("data type :", typeof d, d)
+
+let e = '5' + 3 
+console.log("data type :", typeof e, e)
+
+let f = 0.1 + 0.2  !== 0.3
+console.log("data type :", typeof f, f)
+
+let g = [] == []
+console.log("data type :", typeof g, g)
